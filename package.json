@@ -1,0 +1,25 @@
+{
+  "name": "setup-scryer-prolog",
+  "version": "1.0.0",
+  "description": "This actions sets up a Scryer Prolog environment for use in workflows.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logtalk-actions/setup-scryer-prolog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/logtalk-actions/setup-scryer-prolog/issues"
+  },
+  "homepage": "https://github.com/logtalk-actions/setup-scryer-prolog#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/exec": "^1.0.1",
+    "@actions/github": "^1.1.0"
+  }
+}

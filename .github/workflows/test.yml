@@ -1,0 +1,25 @@
+name: Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      matrix:
+        operating-system: [macOS-latest, ubuntu-latest]
+    steps:
+      - name: Install Rust cargo
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          components: cargo
+      - name: Install Scryer Prolog
+        uses: logtalk-actions/setup-scryer-prolog@master
+        with:
+          scryer-prolog-version: latest
+      - name: Run trivial sanity test
+        run: |
+          echo ":- initialization(halt)." > init.pl
+          scryer-prolog init.pl

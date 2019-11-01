@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -eo pipefail
+
+version=$1
+
+cd /tmp
+
+if [ "$version" == "latest" ] ; then
+	cargo install scryer-prolog
+else 
+	cargo install --vers $version scryer-prolog
+fi

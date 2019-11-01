@@ -1,0 +1,13 @@
+name: Setup Scryer Prolog
+description: Installs the specified Scryer Prolog
+inputs:
+  scryer-prolog-version:
+    description: Scryer Prolog version to install
+    required: true
+    default: latest
+runs:
+  using: 'node12'
+  main: 'src/setup-scryer-prolog.js'
+branding:
+  icon: 'box'
+  color: 'blue'
