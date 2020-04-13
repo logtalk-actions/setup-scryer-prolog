@@ -6,7 +6,7 @@ This actions sets up a Scryer Prolog environment for use in workflows.
 
 ## Usage
 
-See [action.yml](action.yml) for the action metadata. The required `scryer-prolog-version` input parameter specifies the version to be installed (`latest` or version number, e.g. `0.8.115`; default is `latest`).
+See [action.yml](action.yml) for the action metadata. The required `scryer-prolog-version` input parameter specifies the version to be installed (`latest` or version number, e.g. `0.8.120`; default is `latest`).
 
 ## Example
 
@@ -41,4 +41,6 @@ This project is released under the [Apache License 2.0](LICENSE).
 
 ## Current Status
 
-This action is in active development. This action does not support Windows at this time.
+This action is in active development. Currently, this action compiles Scryer Prolog from sources, making it costly in build time.
+
+This action does not support Windows at this time.
